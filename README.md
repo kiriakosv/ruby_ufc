@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.org/kiriakosv/ruby_ufc.svg?branch=master)](https://travis-ci.org/kiriakosv/ruby_ufc)
 [![Coverage Status](https://coveralls.io/repos/github/kiriakosv/ruby_ufc/badge.svg?branch=master)](https://coveralls.io/github/kiriakosv/ruby_ufc?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2c5d82e2464d857bd494/maintainability)](https://codeclimate.com/github/kiriakosv/ruby_ufc/maintainability)
 
 A simple Ruby wrapper to communicate with the UFC API.
 
