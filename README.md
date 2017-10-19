@@ -3,6 +3,7 @@
 :warning: :construction: **Under heavy development** :warning: :construction:
 
 [![Build Status](https://travis-ci.org/kiriakosv/ruby_ufc.svg?branch=master)](https://travis-ci.org/kiriakosv/ruby_ufc)
+[![Coverage Status](https://coveralls.io/repos/github/kiriakosv/ruby_ufc/badge.svg?branch=master)](https://coveralls.io/github/kiriakosv/ruby_ufc?branch=master)
 
 A simple Ruby wrapper to communicate with the UFC API.
 
