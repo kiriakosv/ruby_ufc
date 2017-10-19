@@ -1,5 +1,7 @@
 # RubyUfc
 
+[![Build Status](https://travis-ci.org/kiriakosv/ruby_ufc.svg?branch=master)](https://travis-ci.org/kiriakosv/ruby_ufc)
+
 A simple Ruby wrapper to communicate with the UFC API.
 
 ## Installation
