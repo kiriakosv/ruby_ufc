@@ -1,5 +1,8 @@
-require "ruby_ufc/version"
+# frozen_string_literal: true
 
-module RubyUfc
-  # Your code goes here...
-end
+require 'net/http'
+require 'json'
+require 'yaml'
+
+require 'ruby_ufc/version'
+require 'ruby_ufc/client'
