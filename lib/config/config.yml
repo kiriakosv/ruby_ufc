@@ -1,2 +1,2 @@
-base_end_point: 'http://ufc-data-api.ufc.com/api/'
+base_end_point: 'http://ufc-data-api.ufc.com/api'
 version: 'v3'
