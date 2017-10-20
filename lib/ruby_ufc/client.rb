@@ -14,9 +14,11 @@ module RubyUfc
     end
 
     ALLOWED_RESOURCES.each do |allowed_resource|
-      define_method(allowed_resource) do
+      define_method(allowed_resource) do |args = {}|
         url = construct_url(allowed_resource)
-        get_json_response(url)
+        response = get_json_response(url)
+        response if args.empty?
+        filter_by_argument(response, args)
       end
     end
 
@@ -30,6 +32,12 @@ module RubyUfc
       uri = URI(url)
       response = Net::HTTP.get(uri)
       JSON.parse(response)
+    end
+
+    def filter_by_argument(response, args)
+      key = args.keys.first
+      value = args[key]
+      response.select { |ans| ans[key.to_s] == value }
     end
   end
 end
