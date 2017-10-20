@@ -49,6 +49,14 @@ supported actions are:
 * news
 * media
 
+Since UFC API has no documentation, each of the actions above comes with a
+helper action that returns an Array of Symbols with the attributes for that
+particular resource. You can use them as follows.
+
+```ruby
+client.fighters_attributes #=> [:article_date, :article_fighter_id, :article_media_id, :author, :created, :external_url, :external_url_text, :featured_news_category, :id, :introduction, :keyword_ids, :last_modified, :published_start_date, :thumbnail, :title, :url_name]
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
