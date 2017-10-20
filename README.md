@@ -36,7 +36,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby_ufc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+In order to contribute to this project, follow the guidelines below:
+* Fork the project
+* Create a feature branch and pull request.
+* Make your commits atomic and descriptive. You can find a nice guide for Git
+  best practices [here](https://github.com/agis/git-style-guide) .
 
 ## License
 
