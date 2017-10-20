@@ -17,7 +17,7 @@ module RubyUfc
       define_method(allowed_resource) do |args = {}|
         url = construct_url(allowed_resource)
         response = get_json_response(url)
-        response if args.empty?
+        return response if args.empty?
         filter_by_argument(response, args)
       end
 
