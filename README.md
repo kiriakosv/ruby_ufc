@@ -26,7 +26,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Description and examples of the supported actions are below. Every action returns an Array of Hashes or an empty Array.
+
+```ruby
+# Instantantiate
+client = RubyUfc::Client.new
+
+client.fighters # Returns an Array of Hashes with all the fighters
+
+client.fighters(first_name: 'Conor') # Returns each fighter whose first name is Conor
+
+client.fighters(first_name: 'SomeWeirdName') # Returns an empty Array
+
+client.fighters(unknown_key: 'A value') # Returns an empty Array
+```
+
+Every supported action has the same behaviour as the action above. Currently
+supported actions are:
+* fighters
+* octagon_girls
+* events
+* news
+* media
 
 ## Development
 
