@@ -54,7 +54,7 @@ helper action that returns an Array of Symbols with the attributes for that
 particular resource. You can use them as follows.
 
 ```ruby
-client.fighters_attributes #=> [:article_date, :article_fighter_id, :article_media_id, :author, :created, :external_url, :external_url_text, :featured_news_category, :id, :introduction, :keyword_ids, :last_modified, :published_start_date, :thumbnail, :title, :url_name]
+client.news_attributes #=> [:article_date, :article_fighter_id, :article_media_id, :author, :created, :external_url, :external_url_text, :featured_news_category, :id, :introduction, :keyword_ids, :last_modified, :published_start_date, :thumbnail, :title, :url_name]
 ```
 
 ## Development
