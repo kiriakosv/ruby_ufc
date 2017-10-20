@@ -64,4 +64,12 @@ class ClientTest < Minitest::Test
       assert_equal resource[:first_name.to_s], 'Nick'
     end
   end
+
+  def test_that_attributes_method_returns_correct_value
+    method = RubyUfc::Client::ALLOWED_RESOURCES.first
+    method += '_attributes'
+    attributes = @client.send(method)
+    assert_equal attributes.class, Array
+    attributes.each { |attribute| assert_equal attribute.class, Symbol }
+  end
 end

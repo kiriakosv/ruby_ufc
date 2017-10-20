@@ -20,6 +20,11 @@ module RubyUfc
         response if args.empty?
         filter_by_argument(response, args)
       end
+
+      define_method(allowed_resource + '_attributes') do
+        response = send(allowed_resource.to_sym)
+        response.first.keys.map(&:to_sym).sort
+      end
     end
 
     private
